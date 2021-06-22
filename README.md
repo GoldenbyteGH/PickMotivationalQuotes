@@ -7,15 +7,12 @@ Il DB  in formato ExCel è stato recuperato da https://sharpquotes.com/ e poi è
 
 La struttura del DB è la seguente:
 
-+----------+--------------+------+-----+---------+----------------+
-| Field    | Type         | Null | Key | Default | Extra          |
-+----------+--------------+------+-----+---------+----------------+
-| Quotes   | mediumtext   | YES  |     | NULL    |                |
-| Author   | varchar(255) | YES  |     | NULL    |                |
-| Category | varchar(255) | YES  |     | NULL    |                |
-| ID       | int(11)      | NO   | PRI | NULL    | auto_increment |
-+----------+--------------+------+-----+---------+----------------+
-
+Field | Type | Null | Key | Default | Extra
+----- | ---- | ---- | ----|---------|------
+Quotes |  mediumtext   | YES  |     | NULL                  
+Author | varchar(255) | YES  |     | NULL    
+Category | varchar(255) | YES  |     | NULL    
+ID | int(11)      | NO   | PRI | NULL    | auto_increment
 
 La LandingPage del Blog ( anchessa in un container)  ha un inclusione di due sottopagine che sono condivise con l'host e che vengono sovrascritte da questo script
 
