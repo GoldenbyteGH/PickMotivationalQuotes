@@ -2,10 +2,9 @@
 
 
 
-Questo Script cambia ogni giorno, il messaggio MOTD (Message Of The Day ) presente sul blog goldenbyte.it ( lo script gira a 0:00 tramite cron)
-Il DB  in formato ExCel è stato recuperato da https://sharpquotes.com/ e poi è stato importato in un DB su MariaDB presente in un container docker privato.
+This Script changes every day, the MOTD (Message Of The Day) message on the goldenbyte.it blog (the script runs at 0:00 via cron) The DB  (ExCel format )has been retrieved from https://sharpquotes.com/ and then it was imported into a MariaDB present in a private docker container.
 
-La struttura del DB è la seguente:
+The structure of the DB is as follows: 
 
 Field | Type | Null | Key | Default | Extra
 ----- | ---- | ---- | ----|---------|------
@@ -14,9 +13,9 @@ Author | varchar(255) | YES  |     | NULL
 Category | varchar(255) | YES  |     | NULL    
 ID | int(11)      | NO   | PRI | NULL    | auto_increment
 
-La LandingPage del Blog ( anchessa in un container)  ha un inclusione di due sottopagine che sono condivise con l'host e che vengono sovrascritte da questo script
+The Blog Landing Page  has an inclusion of two subpages which are shared with the host and which are overwritten by this script 
 
  -  quotes.html
  -  author.html
  
- Al termine della scrittura poi il DB viene chiuso e il container del BLOG viene restartato per applicare le modifiche
+At the end , the script close everythingd and restart the Blog's container to apply the changes. 
