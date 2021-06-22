@@ -14,7 +14,7 @@ Author | varchar(255) | YES  |     | NULL
 Category | varchar(255) | YES  |     | NULL    
 ID | int(11)      | NO   | PRI | NULL    | auto_increment
 
-The Blog Landing Page  has an inclusion of two subpages which are shared with the host and which are overwritten by this script 
+The Blog's Page has two inclusions of subpages which are shared with the host. 
 
  -  quotes.html
  -  author.html
