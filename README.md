@@ -5,7 +5,7 @@
 This Script sets every day the MOTD (Message Of The Day) on the goldenbyte.it blog (the script runs at 0:00 via cron). 
 The DB  (ExCel format )has been retrieved from https://sharpquotes.com/ and then it was imported into a MariaDB present in a private docker container.
 
-Table:
+MotQuotes:
 
 Field | Type | Null | Key | Default | Extra
 ----- | ---- | ---- | ----|---------|------
