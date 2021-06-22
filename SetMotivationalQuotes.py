@@ -59,7 +59,7 @@ cur = conn.cursor()
 RandomCategory = random.choice(Categories)
 
 #Creo la query in base alla categoria scelta
-#Per selezionare un quote a caso in base alla categoria scelta ( anch'essa così a caso ), scelgo un numero a caso in base all'ID della FIRST_ROW e della LAST_ROW ottenuta tramite la seguente UNION 
+#Per selezionare un quote a caso in base alla categoria scelta ( anch'essa così a caso ), scelgo un numero compreso tra l'ID della FIRST_ROW e della LAST_ROW ottenuta tramite la seguente UNION 
 
 query = ('(SELECT ID FROM MotQuotes WHERE Category =  "'+RandomCategory+'" order by ID ASC LIMIT 1)UNION(SELECT ID FROM MotQuotes WHERE Category =  "'+RandomCategory+'" order by ID DESC LIMIT 1)')
 
