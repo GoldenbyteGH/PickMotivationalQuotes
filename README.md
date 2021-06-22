@@ -4,7 +4,7 @@
 
 This Script changes every day, the MOTD (Message Of The Day) message on the goldenbyte.it blog (the script runs at 0:00 via cron) The DB  (ExCel format )has been retrieved from https://sharpquotes.com/ and then it was imported into a MariaDB present in a private docker container.
 
-The structure of the DB is as follows: 
+Table:
 
 Field | Type | Null | Key | Default | Extra
 ----- | ---- | ---- | ----|---------|------
