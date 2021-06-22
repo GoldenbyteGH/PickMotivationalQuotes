@@ -5,7 +5,7 @@
 Questo Script cambia ogni giorno, il messaggio MOTD (Message Of The Day ) presente sul blog goldenbyte.it ( lo script gira a 0:00 tramite cron)
 Il DB  in formato ExCel è stato recuperato da https://sharpquotes.com/ e poi è stato importato in un DB su MariaDB presente in un container docker privato.
 
-La struttura del DB è la seguente:
+MotQuotes:
 
 +----------+--------------+------+-----+---------+----------------+
 | Field    | Type         | Null | Key | Default | Extra          |
