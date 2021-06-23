@@ -71,7 +71,7 @@ for x in myresult:
   RangeIndex.append(x[0])
 
 #Scelgo a caso l'ID del quote tra il range in RangeIndex
-IDQuote = random.choice(RangeIndex) 
+IDQuote = random.randint(RangeIndex[0],RangeIndex[1])
 
 
 # eseguo la seconda query
@@ -79,9 +79,6 @@ query = 'SELECT Quotes,Author FROM MotQuotes WHERE ID = '+str(IDQuote)
 cur.execute(query)
 myresult = cur.fetchall()
 
-
-for x in myresult:
-  RangeIndex.append(x[0])
 
 #Scrivo  su file
 f_quote  = open("quotes.html", "w")
